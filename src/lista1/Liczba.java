@@ -35,7 +35,7 @@ public class Liczba {
 	}
 
 	private void sprawdzPodstawe(int podstawa) throws LiczbaException {
-		if (podstawa < 2 || podstawa > 16) {
+		if (podstawa < 2 || podstawa > 17) {
 			throw new LiczbaException("Nieprawidlowy system");
 		}
 
