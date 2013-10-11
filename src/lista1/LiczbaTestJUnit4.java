@@ -151,6 +151,18 @@ public class LiczbaTestJUnit4 {
 		String wynikKonwersji = liczba.konwersjaNaInnySystem(system);
 		assertEquals("10", wynikKonwersji);
 	}
+	@Test 
+	public final void testKonwersjaNaSiedemna() throws LiczbaException {
+		int system = 17;
+		String wynikKonwersji = liczba.konwersjaNaInnySystem(system);
+		assertEquals("16", wynikKonwersji);
+	}
+	@Test (expected=LiczbaException.class)
+	public final void testKonwersjaNaSiedemna() throws LiczbaException {
+		int system = 18;
+		String wynikKonwersji = liczba.konwersjaNaInnySystem(system);
+		assertEquals("16", wynikKonwersji);
+	}
 
 
 }
